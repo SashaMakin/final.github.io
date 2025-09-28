@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'TTLakes-Thin';
+    src: url('TTLakes-Thin.woff') 
+    }
+
+body {
+    font-family: 'TTLakes-Thin' ,sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
