@@ -34,7 +34,7 @@ button {border: none;background-color: #ffffff;}
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* Основной блок конец*/
@@ -182,7 +182,7 @@ li:nth-child(7n) {display: none;}
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* Основной блок Планшет конец*/
@@ -322,7 +322,7 @@ li:nth-child(7n) {display: none;}
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* Основной блок Десктоп конец*/
