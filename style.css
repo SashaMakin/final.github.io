@@ -358,4 +358,64 @@ li:nth-child(7n) {display: none;}
    justify-content: space-between;}
 
 /* Услуги и сервисы Десктоп конец */
+
+/* Блок НАВ Десктоп начало */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 1063px ;
+  height: 82px;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+/* Блок НАВ Десктоп конец */
+
+/* Скролл список Десктоп начало */
+
+.slide {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  font-family: 'TTLakes-Thin' ,sans-serif;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  display: block;
+  color: #7E7E82;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.active:nth-child(1n) { 
+ border: 2px solid #B8FFEC;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 6px;
+ background-color: #ffffff;
+}
+.active:nth-child(2n) { 
+ border: none;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 6px;
+ background-color: #f8f8f8;
+}
+.desktophide {display: none;}
+
+
+/* Скролл список Десктоп конец */
 }
