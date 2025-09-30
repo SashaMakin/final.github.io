@@ -13,8 +13,6 @@ button {border: none;background-color: #ffffff;}
   background: #ffffff;
   border-bottom: 1px solid #D9FFF5;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -27,8 +25,6 @@ button {border: none;background-color: #ffffff;}
   background: #ffffff;
   border-bottom: 1px solid #D9FFF5;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
 }
 .header-left {
   width: 200px;
@@ -43,6 +39,7 @@ button {border: none;background-color: #ffffff;}
   margin-right: 10px;
 }
 .call, .chat, .profile, .divider {display: none;}
+
 /* Шапка конец */
 
  /* Основной блок начало*/
@@ -53,6 +50,7 @@ button {border: none;background-color: #ffffff;}
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  
 }
 
 /* Основной блок конец*/
@@ -134,6 +132,8 @@ li:nth-child(7n) {display: none;}
   justify-content: space-between;
   width: 320px;
   height: 322px;
+    margin-left: auto;
+  margin-right: auto;
 }
 
 /* Блок infogroup конец */
@@ -284,6 +284,8 @@ li:nth-child(7n) {display: none;}
   height: 208px;
   grid-template-areas: "first-block foto"
                         "first-block foto";
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Блок infogroup Планшет конец */
@@ -448,6 +450,9 @@ li {
   height: 307px;
   grid-template-areas: "first-block foto"
                         "first-block foto";
+                        margin-left: auto;
+  margin-right: auto;
+  
 }
 
 /* Блок infogroup Десктоп конец */
