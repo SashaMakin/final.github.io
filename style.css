@@ -415,7 +415,61 @@ li {
  background-color: #f8f8f8;
 }
 .desktophide {display: none;}
-
+.desktopview {margin-left: 31px;}
 
 /* Скролл список Десктоп конец */
+
+/* Блок infogroup Десктоп начало */
+
+.infogroup {
+  display: grid;
+  align-items: start;
+  justify-content: space-around;
+  margin-left: 5px;
+  width: 1121px;
+  height: 307px;
+  grid-template-areas: "first-block foto"
+                        "first-block foto";
+}
+
+/* Блок infogroup Десктоп конец */
+
+/* Блок first-block начало */
+
+.first-block {
+  display: grid;
+  place-content: start;
+}
+
+/* Блок first-block конец */
+
+/* Блок textbox Планшет начало */
+
+.textbox {
+  width: 490px;
+  height: 160px;
+  font-family: 'TTLakes-Thin' ,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.textbox__content1 {display: none;}
+
+/* Блок textbox Планшет конец */
+
+/* Блок readmoreblock Планшет начало */
+
+.readmoreblock {
+  display: flex;font-size: 16px;font-family: 'TTLakes-Thin' ,sans-serif;font-weight: 500;}
+  
+/* Блок readmoreblock Планшет конец */
+
+/* foto Планшет начало */
+
+.copy {
+  width: 531.5px;
+  height: 307px;
+  border-radius: 10px;
+}
+
+/* foto Планшет начало */
 }
