@@ -2,60 +2,62 @@
     font-family: 'TTLakes-Thin';
     src: url('TTLakes-Thin.woff') 
     }
-
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: 'TTLakes-Thin' ,sans-serif;
-  background-color: #f8f8f8;
 }
+button {border: none;background-color: #ffffff;}
 
-header {
-  background-color: #ffffff;
-  height: 88px;
+@media screen and (max-width: 767px) {
+
+/* Шапка начало */
+
+.header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 80px;
+  background: #ffffff;
   border-bottom: 1px solid #D9FFF5;
-  margin: 0;
-  padding: 0;
- }
- 
-button {
-  background-color: #ffffff;
-  border: none;
 }
 .header-left {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- width: 200px;
-  }
-  .header-right {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   width: 320px;
-  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
 }
+.header-right {display: none;}
+
+/* Шапка конец */
+
+ /* Основной блок начало*/
+
+.main {
+  height: 508px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Основной блок конец*/
+
+/* Услуги и сервисы начало */
+
 .titleall {
- height: 40px;
- display: flex;
- align-items: center;
- font-size: 17px;
- margin-top: 20px;
- margin-bottom: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-family: 'TTLakes-Thin' ,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }
-h1 {
-  width: 288px;
-  font-size: 28px;
-  margin: auto;
-  font-family: "TTLakes-Thin", "Arial", sans-serif;
-  margin-left: 16px;
-}
-nav {
+.title {display: flex;align-items: center;}
+.highlight{margin-right: 10px;}
+.header-rightside {display: none;}
+
+/* Услуги и сервисы конец */
+
+/* Блок НАВ начало */
+
+.nav {
   display: block;
   unicode-bidi: isolate;
   max-width: 780vw;
@@ -64,12 +66,17 @@ nav {
   margin-right: auto;
   white-space: nowrap;
 }
-ul {
+
+/* Блок НАВ конец */
+
+/* Скролл список начало */
+
+.slide {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
-  font-family: "TTLakes-Thin", "Arial", sans-serif;
+  font-family: 'TTLakes-Thin' ,sans-serif;
   justify-content: flex-start;
   align-items: center;
   overflow-x: scroll;
@@ -79,6 +86,7 @@ ul {
   margin-right: auto;
 }
 li {
+  display: block;
   color: #7E7E82;
   font-size: 16px;
   padding-top: 8px;
@@ -86,13 +94,6 @@ li {
   margin-left: 15px;
   margin-right: 15px;;
 }
-li:nth-of-type(1) {
-    display: none;
-  }
-  li:nth-child(5n),
-    li:nth-child(7n) {
-    display: none;
-    }
 .active:nth-child(2n) { 
  border: 2px solid #B8FFEC;
  padding-left: 15px;
@@ -100,154 +101,261 @@ li:nth-of-type(1) {
  border-radius: 6px;
  background-color: #ffffff;
 }
+li:nth-of-type(1) {display: none;}   
+li:nth-child(5n),
+li:nth-child(7n) {display: none;}
+
+/* Скролл список конец */
+
+/* Блок infogroup начало */
+
 .infogroup {
-  display: grid;
-  grid-template-areas: "first-block foto"
-                       "first-block foto";                     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 322px;
 }
-p {
-margin: 0;
-}
-.textbox__content1 {
-  margin-top: 20px;
-}
-.textbox__content2 {
-  display: none;
-}
+
+/* Блок infogroup конец */
+
+/* Блок first-block начало */
+
+/* Блок first-block конец */
+
+/* Блок textbox начало */
 
 .textbox {
-  margin: 0;
-  font-family: "TTLakes-Thin", "Arial", sans-serif;
-  font-size: 14px;
-  color: #1B1C21;
+  width: 288px;
   height: 90px;
-  margin-left: 20px;
-  margin-right: auto;
-}
-.infogroup {
-  margin: 0;
-  margin-top: 20px;
-  font-family: "TTLakes-Thin", "Arial", sans-serif;
+  font-family: 'TTLakes-Thin' ,sans-serif;
   font-size: 14px;
-  color: #1B1C21;
-  width: 768px;
-  height: 208px;
- display: flex;
-justify-content: space-between;
-margin-left: auto;
-margin-right: auto;
+  font-weight: 400;
 }
-.first-block {
-  margin: 0;
-  width: 330px;
-}
+.textbox__content1,
+.textbox__content2 {display: none;}
+
+/* Блок textbox конец */
+
+/* Блок readmoreblock начало */
 
 .readmoreblock {
+  display: flex;margin-top: 10px;font-size: 16px;font-family: 'TTLakes-Thin' ,sans-serif;font-weight: 500;}
+/* Блок readmoreblock конец */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+
+  /* Шапка Планшет начало */
+
+.header {
+  display: flex;
+  height: 80px; 
+  background: #ffffff;
+  border-bottom: 1px solid #D9FFF5;
+  justify-content: space-between;
+}
+.header-left {
+  width: 200px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.repairleft, .checkstatusleft {display: none;}
+.burger {order: -2;}
+.divider2 {order: -1;}
+
+.header-right {
+  width: 320px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+/* Шапка Планшет конец */
+
+/* Основной блок Планшет начало*/
+
+.main {
+  height: 416px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Основной блок Планшет конец*/
+
+/* Услуги и сервисы Планшет начало */
+
+.titleall {
+  height: 40px;
   display: flex;
   align-items: center;
-  height: 64px;
-  width: 132px;
-  margin-left: 22px;
-  font-size: 16px;
-  font-family: "TTLakes-Thin", "Arial", sans-serif;
-  margin-top:60px;
-  margin-bottom: 10px;
+  font-family: 'TTLakes-Thin' ,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }
-.read p {
-  margin-left: 3px; 
-}
-.read img {
-  margin-left: -7px;
-}
-.copy {
- width: 360px;
- border-radius: 10px;
-}
-.footer {
-  height: 20px; 
-}
-.header-rightside {
-  display: none;
-}
-.title {
-  display: flex; 
-  margin-bottom: 20px; 
-  margin-top: 20px;
-}
+.title {display: flex;align-items: center;}
+.highlight{margin-right: 10px;}
+.header-rightside {display: none;}
 
-@media screen and (max-width: 768px) {
-  .call,
-  .chat,
-  .profile,
-  .divider2 {display: none}
-}
+/* Услуги и сервисы Планшет конец */
 
-.header-right {width: 120px;}
-  .burger {order: -1}
-  .header-left .divider {order: 0;}
-  .logo {margin-left: -10px;}
+/* Блок НАВ Планшет начало */
 
-  li:nth-of-type(1) {
-    display: none;
-  }
-  li:nth-child(4n),
-  li:nth-child(5n),
-  li:nth-child(6n),
-  li:nth-child(7n) {
-    display: none;
-  }
-  nav {
-   display: block;
+.nav {
+  display: block;
   unicode-bidi: isolate;
-  max-width: 780vw;
+  max-width: 1120vw;
   overflow-x: hidden;
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   white-space: nowrap;
 }
- ul {
-  margin-left: 8px; 
-  font-family: "TTLakes-Medium", "Arial", sans-serif;
+
+/* Блок НАВ Планшет конец */
+
+/* Скролл список Планшет начало */
+
+.slide {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  font-family: 'TTLakes-Thin' ,sans-serif;
   justify-content: flex-start;
   align-items: center;
   overflow-x: scroll;
   flex-wrap: nowrap;
-  width: 77vw;
+  width: 100vw;
   margin-left: auto;
-  margin-right: auto;   
+  margin-right: auto;
 }
 li {
-  margin-left: 10px;
-  margin-right: 10px;}
+  display: block;
+  color: #7E7E82;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 15px;
+  margin-right: 15px;;
+}
+.active:nth-child(2n) { 
+ border: 2px solid #B8FFEC;
+ padding-left: 15px;
+ padding-right: 15px;
+ border-radius: 6px;
+ background-color: #ffffff;
+}
+li:nth-of-type(1) {display: none;}   
+li:nth-child(5n),
+li:nth-child(7n) {display: none;}
 
-.textbox__content1,
-.textbox__content2 {
-  display: none;
-}
+/* Скролл список Планшет конец */
+
+/* Блок infogroup Планшет начало */
+
 .infogroup {
-  display: flex; 
-  flex-direction: 
-  column; width: 320px;
+  display: grid;
+  align-items: start;
+  justify-content: space-around;
+  margin-left: 5px;
+  width: 720px;
+  height: 208px;
+  grid-template-areas: "first-block foto"
+                        "first-block foto";
 }
-.textbox {
-  margin-left: 20px;
-}
+
+/* Блок infogroup Планшет конец */
+
+/* Блок first-block начало */
+
 .first-block {
-  width: 300px;
+  display: grid;
+  place-content: start;
 }
+
+/* Блок first-block конец */
+
+/* Блок textbox Планшет начало */
+
+.textbox {
+  width: 312px;
+  height: 160px;
+  font-family: 'TTLakes-Thin' ,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.textbox__content2 {display: none;}
+
+/* Блок textbox Планшет конец */
+
+/* Блок readmoreblock Планшет начало */
+
+.readmoreblock {
+  display: flex;font-size: 16px;font-family: 'TTLakes-Thin' ,sans-serif;font-weight: 500;}
+  
+/* Блок readmoreblock Планшет конец */
+
+/* foto Планшет начало */
+
 .copy {
-  width: 320px; 
-  border-radius: 0;
+  width: 360px;
+  height: 208px;
+  border-radius: 10px;
 }
-.read {
-  margin-top: 0;
+
+/* foto Планшет начало */
+
 }
+
+@media screen and (min-width: 1121px) {
+
+.header, .burger, .logo, .divider2, .repairleft, .checkstatusleft, .call, .chat, .profile, .divider, .repair, .checkstatus{display: none;}
+
+/* Основной блок Десктоп начало*/
+
+.main {
+  height: 535px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Основной блок Десктоп конец*/
+
+/* Услуги и сервисы Десктоп начало */
+
+.titleall {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'TTLakes-Thin' ,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+.title {display: flex;align-items: center;}
+.highlight{margin-right: 10px;}
+
 .header-rightside {
-  display: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 380px;
+  height: 40px;
 }
-.title {
-  display: flex; 
-  margin-bottom: 20px; 
-  margin-top: 20px; 
-  width: 288px;
+.repairright, .checkstatusright {
+   background-color: #f8f8f8;
+   font-family: 'TTLakes-Thin' ,sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   width: 160px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;}
+
+/* Услуги и сервисы Десктоп конец */
 }
