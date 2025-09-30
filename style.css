@@ -18,6 +18,8 @@ button {border: none;background-color: #ffffff;}
   background: #ffffff;
   border-bottom: 1px solid #D9FFF5;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-left {
   width: 200px;
