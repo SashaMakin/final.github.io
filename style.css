@@ -7,15 +7,7 @@
   padding: 0;
 }
 button {border: none;background-color: #ffffff;}
-.header {
-  display: flex;
-  height: 80px;
-  background: #ffffff;
-  border-bottom: 1px solid #D9FFF5;
-  justify-content: space-between;
-}
 @media screen and (max-width: 767px) {
-/* Шапка начало */
 .header {
   display: flex;
   height: 80px;
@@ -36,8 +28,6 @@ button {border: none;background-color: #ffffff;}
   margin-right: 10px;
 }
 .call, .chat, .profile, .divider {display: none;}
-/* Шапка конец */
- /* Основной блок начало*/
 .main {
   height: 508px;
   background-color: #f8f8f8;
@@ -45,8 +35,6 @@ button {border: none;background-color: #ffffff;}
   flex-direction: column;
   justify-content: space-evenly;
 }
-/* Основной блок конец*/
-/* Услуги и сервисы начало */
 .titleall {
   height: 40px;
   display: flex;
@@ -58,8 +46,6 @@ button {border: none;background-color: #ffffff;}
 .title {display: flex;align-items: center;}
 .highlight{margin-right: 10px;}
 .header-rightside {display: none;}
-/* Услуги и сервисы конец */
-/* Блок НАВ начало */
 .nav {
   display: block;
   unicode-bidi: isolate;
@@ -67,8 +53,6 @@ button {border: none;background-color: #ffffff;}
   overflow-x: hidden;
   white-space: nowrap;
 }
-/* Блок НАВ конец */
-/* Скролл список начало */
 .slide {
   margin: 0;
   padding: 0;
@@ -100,8 +84,6 @@ button {border: none;background-color: #ffffff;}
 .slide__option:nth-of-type(1) {display: none;}   
 .slide__option:nth-child(5n),
 .slide__option:nth-child(7n) {display: none;}
-/* Скролл список конец */
-/* Блок infogroup начало */
 .infogroup {
   display: flex;
   flex-direction: column;
@@ -110,10 +92,6 @@ button {border: none;background-color: #ffffff;}
   width: 320px;
   height: 322px;
 }
-/* Блок infogroup конец */
-/* Блок first-block начало */
-/* Блок first-block конец */
-/* Блок textbox начало */
 .textbox {
   width: 288px;
   height: 90px;
@@ -123,14 +101,10 @@ button {border: none;background-color: #ffffff;}
 }
 .textbox__content1,
 .textbox__content2 {display: none;}
-/* Блок textbox конец */
-/* Блок readmoreblock начало */
 .readmoreblock {
   display: flex;margin-top: 10px;font-size: 16px;font-family: 'TTLakes-Thin' ,sans-serif;font-weight: 500;}
-/* Блок readmoreblock конец */
 }
 @media screen and (min-width: 768px) and (max-width: 1120px) {
-  /* Шапка Планшет начало */
 .header {
   display: flex;
   height: 80px; 
@@ -153,8 +127,6 @@ button {border: none;background-color: #ffffff;}
   justify-content: space-around;
   margin-right: 10px;
 }
-/* Шапка Планшет конец */
-/* Основной блок Планшет начало*/
 .main {
   height: 416px;
   background-color: #f8f8f8;
@@ -162,8 +134,6 @@ button {border: none;background-color: #ffffff;}
   flex-direction: column;
   justify-content: space-evenly;
 }
-/* Основной блок Планшет конец*/
-/* Услуги и сервисы Планшет начало */
 .titleall {
   height: 40px;
   display: flex;
@@ -175,8 +145,6 @@ button {border: none;background-color: #ffffff;}
 .title {display: flex;align-items: center;}
 .highlight{margin-right: 10px;}
 .header-rightside {display: none;}
-/* Услуги и сервисы Планшет конец */
-/* Блок НАВ Планшет начало */
 .nav {
   display: block;
   unicode-bidi: isolate;
@@ -184,8 +152,6 @@ button {border: none;background-color: #ffffff;}
   overflow-x: hidden;
   white-space: nowrap;
 }
-/* Блок НАВ Планшет конец */
-/* Скролл список Планшет начало */
 .slide {
   margin: 0;
   padding: 0;
@@ -216,9 +182,7 @@ button {border: none;background-color: #ffffff;}
 }
 .slide__option:nth-of-type(1) {display: none;}   
 .slide__option:nth-child(5n),
-.slide__option:nth-child(7n) {display: none;}
-/* Скролл список Планшет конец */
-/* Блок infogroup Планшет начало */          
+.slide__option:nth-child(7n) {display: none;}          
 .infogroup {
   display: grid;
   align-items: start;
@@ -229,14 +193,10 @@ button {border: none;background-color: #ffffff;}
   grid-template-areas: "first-block foto"
                         "first-block foto";
 }
-/* Блок infogroup Планшет конец */
-/* Блок first-block начало */
 .first-block {
   display: grid;
   place-content: start;
 }
-/* Блок first-block конец */
-/* Блок textbox Планшет начало */
 .textbox {
   width: 312px;
   height: 160px;
@@ -245,22 +205,16 @@ button {border: none;background-color: #ffffff;}
   font-weight: 400;
 }
 .textbox__content2 {display: none;}
-/* Блок textbox Планшет конец */
-/* Блок readmoreblock Планшет начало */
 .readmoreblock {
   display: flex;font-size: 16px;font-family: 'TTLakes-Thin' ,sans-serif;font-weight: 500;} 
-/* Блок readmoreblock Планшет конец */
-/* foto Планшет начало */
 .copy {
   width: 360px;
   height: 208px;
   border-radius: 10px;
 }
-/* foto Планшет начало */
 }
 @media screen and (min-width: 1121px) {
 .header, .burger, .logo, .divider2, .repairleft, .checkstatusleft, .call, .chat, .profile, .divider, .repair, .checkstatus{display: none;}
-/* Основной блок Десктоп начало*/
 .main {
   height: 535px;
   background-color: #f8f8f8;
@@ -268,8 +222,6 @@ button {border: none;background-color: #ffffff;}
   flex-direction: column;
   justify-content: space-evenly;
 }
-/* Основной блок Десктоп конец*/
-/* Услуги и сервисы Десктоп начало */
 .titleall {
   height: 40px;
   display: flex;
@@ -295,9 +247,8 @@ button {border: none;background-color: #ffffff;}
    width: 160px;
    display: flex;
    align-items: center;
-   justify-content: space-between;}
-/* Услуги и сервисы Десктоп конец */
-/* Блок НАВ Десктоп начало */
+   justify-content: space-between;
+  }
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -308,8 +259,6 @@ button {border: none;background-color: #ffffff;}
   overflow-x: hidden;
   white-space: nowrap;
 }
-/* Блок НАВ Десктоп конец */
-/* Скролл список Десктоп начало */
 .slide {
   margin: 0;
   padding: 0;
@@ -346,8 +295,6 @@ button {border: none;background-color: #ffffff;}
 }
 .slide__option--desktophide {display: none;}
 .slide__option--desktopview {margin-left: 31px;}
-/* Скролл список Десктоп конец */
-/* Блок infogroup Десктоп начало */
 .infogroup {
   display: grid;
   align-items: start;
@@ -358,14 +305,10 @@ button {border: none;background-color: #ffffff;}
   grid-template-areas: "first-block foto"
                         "first-block foto";
 }
-/* Блок infogroup Десктоп конец */
-/* Блок first-block начало */
 .first-block {
   display: grid;
   place-content: start;
 }
-/* Блок first-block конец */
-/* Блок textbox Планшет начало */
 .textbox {
   width: 490px;
   height: 160px;
@@ -374,16 +317,11 @@ button {border: none;background-color: #ffffff;}
   font-weight: 400;
 }
 .textbox__content1 {display: none;}
-/* Блок textbox Планшет конец */
-/* Блок readmoreblock Планшет начало */
 .readmoreblock {
   display: flex;font-size: 16px;font-family: 'TTLakes-Thin' ,sans-serif;font-weight: 500;}  
-/* Блок readmoreblock Планшет конец */
-/* foto Планшет начало */
 .copy {
   width: 531.5px;
   height: 307px;
   border-radius: 10px;
 }
-/* foto Планшет начало */
 }
