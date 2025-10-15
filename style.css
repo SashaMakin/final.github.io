@@ -6,17 +6,21 @@
   margin: 0;
   padding: 0;
 }
-button {border: none;background-color: #ffffff;}
+button {border: none;background-color: #ffffff;cursor: pointer;}
+button:hover {transform: scale(0.95);transition-duration: 0.5s;filter: Grayscale(0.3);}
+button:active {transform: scale(1.10);transition-duration: 0.5s;}
 @media screen and (max-width: 319px) {
 .burger, .divider2, .repairleft, .checkstatusleft, .divider,.call, .chat, .profile, .repair, .checkstatus, .titleall, .slide, .infogroup {display: none;}
  .header {
     padding-left: 17px;
     padding-top: 17px;
+    padding-right: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
     .header-left {
+      width: 155px;
     display: flex;
     justify-content: space-between;
     }
